@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 export default function Navbar(props) {
@@ -6,7 +6,7 @@ export default function Navbar(props) {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg bg-dark">
+        <nav className="navbar navbar-expand-lg bg-light btn-light">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               {props.title}

@@ -1,28 +1,25 @@
 
 import './App.css';
 import Navbar from './Components/Navbar';
-// import TextArea from './Components/TextArea';
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import TextArea from './Components/TextArea';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 import About from './Components/About';
 
 function App() {
   return (
     <div>
-      
-      {/* <Router> */}
+      <Router>
       <Navbar title="Text Convertor"/>
-      {/* <TextArea heading="Enter your Text to Perform some Actions :"/> */}
-      <About />
-        {/* <Routes>
-          <Route exact path="/about">
-            <About />
+        <Routes>
+          <Route exact path='/' element={<TextArea heading="Enter your Text to Perform some Actions :"/>}></Route>
+          <Route exact path="/about" element={<About/>}>
           </Route>
         </Routes>
-      </Router> */}
+      </Router>
       
     </div>
     
