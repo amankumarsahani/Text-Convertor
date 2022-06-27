@@ -7,7 +7,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import About from './Components/About';
+// import About from './Components/About';
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
       <Navbar title="Text Convertor"/>
         <Routes>
           <Route exact path='/' element={<TextArea heading="Enter your Text to Perform some Actions :"/>}></Route>
-          <Route exact path="/about" element={<About/>}>
-          </Route>
+          {/* <Route exact path="/about" element={<About/>}>
+          </Route> */}
         </Routes>
       </Router>
       
